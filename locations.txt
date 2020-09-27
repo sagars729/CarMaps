@@ -1,0 +1,461 @@
+Birmingham, 2696 John Hawkins Parkway 
+Hoover, AL 35244
+
+Dothan, 2756 Ross Clark Circle 
+Dothan, AL 36301 
+
+Huntsville, 6364 University Drive NW 
+Huntsville, AL 35806 
+
+Mobile, 965 E I-65 Service Road S 
+Mobile, AL 36606 
+
+Montgomery, 5175 Woodmere Boulevard 
+Montgomery, AL 36106 
+
+Phoenix-Gilbert, 1480 E. Motorplex Loop 
+Gilbert, AZ 85297 
+
+Scottsdale, 15350 North Hayden Road 
+Scottsdale, AZ 85260 
+
+Tolleson, 1041 N. 99th Avenue 
+Tolleson, AZ 85353 
+
+Tucson, 4755 North Oracle Road 
+Tucson, AZ 85705 
+
+Bakersfield, 6801 Colony Street 
+Bakersfield, CA 93307 
+
+Costa Mesa, 3200 Harbor Boulevard 
+Costa Mesa, CA 92626 
+
+Duarte, 1131 Central Avenue 
+Duarte, CA 91010 
+
+Fairfield, 2955 Auto Mall Pkwy 
+Fairfield, CA 94533 
+
+Fremont, 44100 Christy St. 
+Fremont, CA 94538 
+
+Fresno, 7180 North Palm Avenue 
+Fresno, CA 93650 
+
+Irvine, 9501 Research Drive 
+Irvine, CA 92618 
+
+Buena Park, 6100 Auto Center Drive 
+Buena Park, CA 90621 
+
+Burbank, 1000 South Flower Street 
+Burbank, CA 91502
+
+Canoga Park, 21300 Roscoe Blvd 
+Canoga Park, CA 91304 
+
+LAX, 8611 La Cienega Boulevard 
+Inglewood, CA 90301 
+
+Murrieta, 25560 Madison Ave. 
+Murrieta, CA 92562
+
+Ontario, 4100 East Inland Empire Blvd. 
+Ontario, CA 91764 
+
+Oxnard, 2001 Lockwood St. 
+Oxnard, CA 93036 
+
+Palmdale, 405 W. Technology Drive 
+Palmdale, CA 93551
+
+Riverside, 7980 Auto Drive 
+Riverside, CA 92504 
+
+Torrance, 18020 Hawthorne Boulevard 
+Torrance, CA 90504 
+
+Modesto, 4300 McHenry Avenue 
+Modesto, CA 95356 
+
+Palm Desert, 73450 Dinah Shore Drive
+Palm Desert, CA 92211 
+
+Pleasant Hill, 77 Chilpancingo Parkway
+Pleasant Hill, CA 94523 
+
+Pleasanton, 2750 Stoneridge Drive
+Pleasanton, CA 94588 
+
+Roseville, 1450 Eureka Road
+Roseville, CA 95661 
+
+Sacramento, 8185 E. Stockton Blvd
+Sacramento, CA 95828 
+
+Escondido, 830 Dan Way
+Escondido, CA 92025 
+
+Kearny Mesa, 7766 Balboa Avenue
+San Diego, CA 92111 
+
+Serramonte, 401 Serramonte Blvd.
+Colma, CA 94014 
+
+Capitol Expressway, 750 West Capitol Expressway
+San Jose, CA 95136 
+
+Santa Rosa, 2783 Corby Avenue
+Santa Rosa, CA 95407 
+
+Colorado Springs, 4010 Tutt Boulevard
+Colorado Springs, CO 80922 
+
+Loveland, 3760 Byrd Drive
+Loveland, CO 80538 
+
+Parker, 18220 Ponderosa Drive
+Parker, CO 80134 
+
+South Broadway, 5850 South Broadway
+Littleton, CO 80121 
+
+West 104th Ave, 2600 W 104th Ave
+Federal Heights, CO 80234 
+
+Golden, 16500 W Colfax Avenue
+Golden, CO 80401 
+
+East Haven, 121 Frontage Road
+East Haven, CT 06512 
+
+Hartford, 89 Weston Street
+Hartford, CT 06120 
+
+Waterbury, 450 Captain Neville Drive
+Waterbury, CT 06705 
+
+Newark, 2070 Stafford Way
+Newark, DE 19711 
+
+Boynton Beach, 2000 Highridge Road
+Boynton Beach, FL 33426 
+
+Clearwater, 2550 Roosevelt Boulevard
+Clearwater, FL 33760 
+
+Daytona, 800 N Tomoka Farms Rd.
+Daytona Beach, FL 32124 
+
+Ft. Lauderdale, 7420 State Road 84
+Davie, FL 33317 
+
+Ft. Myers, 3000 Colonial Blvd.
+Ft. Myers, FL 33966 
+
+Gainesville, 4185 N. Main Street
+Gainesville, FL 32609 
+
+Jacksonville, 11335 Atlantic Boulevard
+Jacksonville, FL 32225 
+
+Jacksonville West, 7438 Blanding Blvd
+Jacksonville, FL 32244 
+
+Jensen Beach, 3410 NW Main Ave
+Jensen Beach, FL 34957 
+
+Melbourne, 1075 Palm Bay Rd.
+Melbourne, FL 32904 
+
+Doral, 1300 NW 98th Court
+Doral, FL 33172 
+
+Miami Lakes, 6300 NW 167th Street
+Miami Lakes, FL 33014 
+
+Pensacola, 6450 Pensacola Blvd.
+Pensacola, FL 32505 
+
+Naples, 3405 Prospect Ave
+Naples, FL 34104 
+
+Orlando, 6375 South Semoran Boulevard
+Orlando, FL 32822 
+
+Pompano Beach, 1700 NW 36th St
+Pompano Beach, FL 33064 
+
+Sanford, 901 Towne Center Boulevard
+Sanford, FL 32771 
+
+Tallahassee, 3500 W Tennessee Street
+Tallahassee, FL 32304 
+
+Bradenton, 5324 14th Street W
+Bradenton, FL 34207 
+
+Tampa, 14920 N Nebraska Avenue
+Tampa, FL 33613 
+
+Athens, 4300 Atlanta Hwy
+Athens, GA 30606 
+
+Buford, 3721 Buford Dr
+Buford, GA 30519 
+
+Lithia Springs, 1977 Thornton Road
+Lithia Springs, GA 30122 
+
+Peachtree, 5399 Peachtree Industrial Blvd
+Chamblee, GA 30341 
+
+Roswell, 11450 Alpharetta Hwy
+Roswell, GA 30076 
+
+Southlake, 3100 Mt. Zion Parkway
+Stockbridge, GA 30281 
+
+Augusta, 130 Mason McKnight Jr. Pkwy
+Augusta, GA 30907 
+
+Columbus, 6463 Veterans Parkway
+Columbus, GA 31909 
+
+Warner Robins, 551 S. Houston Lake Rd.
+Warner Robins, GA 31088 
+
+Norcross, 1975 Beaver Ruin Road
+Norcross, GA 30071 
+
+Savannah, 8989 Abercorn St
+Savannah, GA 31406 
+
+Town Center, 1215 Ernest Barrett Parkway
+Kennesaw, GA 30144 
+
+Boise (Meridian), 4043 E. Elden Gray Street
+Meridian, ID 83642 
+
+Bloomington, 1213 Holiday Drive
+Bloomington, IL 61704 
+
+Hillside (Eisenhower Expy), 101 North Wolf Road
+Hillside, IL 60162 
+
+Oak Lawn, 6540 95th Street
+Oak Lawn, IL 60453 
+
+Schaumburg, 250 East Golf Road
+Schaumburg, IL 60173 
+
+Tinley Park, 18800 South Oak Park Avenue
+Tinley Park, IL 60477 
+
+Glencoe (Edens Expy), 2000 W. Frontage Road
+Glencoe, IL 60022 
+
+Naperville, 3320 Odyssey Court
+Naperville, IL 60563 
+
+Springfield, 2531 Chuckwagon Drive
+Springfield, IL 62711 
+
+O'Fallon, 1254 Central Park Drive
+O'Fallon, IL 62269 
+
+Fort Wayne, 3705 N Clinton St
+Fort Wayne, IN 46805 
+
+Indianapolis, 9750 North Gray Road
+Indianapolis, IN 46280 
+
+Merrillville, 1370 East 79th Place
+Merrillville, IN 46410 
+
+Des Moines, 10315 Hickman Rd
+Urbandale, IA 50322 
+
+Kanasa City, 6801 East Frontage Road
+Merriam, KS 66204 
+
+Wichita, 10221 East Kellogg Avenue
+Wichita, KS 67207 
+
+Lexington, 105 Sand Lake Drive
+Lexington, KY 40515 
+
+Louisville, 9550 Bluegrass Parkway
+Louisville, KY 40299 
+
+Baton Rouge, 6768 Siegen Lane
+Baton Rouge, LA 70809 
+
+Lafayette, 5825 Johnston St
+Lafayette, LA 70503 
+
+Kenner, 1601 32nd St
+Kenner, LA 70065 
+
+North Shore, 68348 HWY 190 Service Rd.
+Covington, LA 70433 
+
+Shreveport, 765 Brook Hollow Dr.
+Shreveport, LA 71105 
+
+South Portland, 415 Maine Mall Rd
+South Portland, ME 04106 
+
+Timonium, 10130 York Road
+Cockeysville, MD 21030 
+
+Brandywine, 7700 Matapeake Business Dr.
+Brandywine, MD 20613 
+
+Ellicott City, 8901 Executive Center Road
+Ellicott City, MD 21043 
+
+Frederick, 5601 Urbana Pike
+Frederick, MD 21704 
+
+Gaithersburg, 16411 Shady Grove Rd.
+Gaithersburg, MD 20877 
+
+Laurel, 8800 Freestate Drive
+Laurel, MD 20723 
+
+Laurel Toyota, 8801 Freestate Drive
+Laurel, MD 20723 
+
+Salisbury, 1801 North Salisbury Blvd
+Salisbury, MD 21801 
+
+White Marsh, 10201 Philadelphia Road
+White Marsh, MD 21162 
+
+Danvers, 161 Andover St.
+Danvers, MA 01923 
+
+Norwood, 1320 Boston Providence Turnpike
+Norwood, MA 02062 
+
+Westborough, 170 Turnpike Rd.
+Westborough, MA 01581 
+
+North Attleboro, 120 Draper Avenue
+North Attleboro, MA 02760 
+
+Grand Rapids (Kentwood), 4431 28th Street
+Kentwood, MI 49512 
+
+Brooklyn Park, 6900 Lakeland Avenue N.
+Brooklyn Park, MN 55428 
+
+Maplewood, 1325 Beam Avenue E.
+Maplewood, MN 55109 
+
+Gulfport, 11155 CarMax Way
+Gulfport, MS 39503 
+
+Jackson (MS), 597 Beasley Road
+Jackson, MS 39206 
+
+Tupelo, 3147 Tom Watson Dr.
+Saltillo, MS 38866 
+
+Independence, 19010 East Valley View Parkway
+Independence, MO 64055 
+
+St. Louis - Mid Rivers Mall, 4990 N. Service Rd.
+St. Peters, MO 63376 
+
+St. Louis - South Lindbergh, 6201 S. Lindbergh Blvd
+St. Louis, MO 63123 
+
+Omaha, 17606 Burt Street
+Omaha, NE 68118 
+
+Centennial, 4900 North Rancho Drive
+Las Vegas, NV 89130 
+
+Henderson, 1000 W. Warm Springs Road
+Henderson, NV 89014 
+
+West Sahara, 6755 West Sahara Avenue
+Las Vegas, NV 89146 
+
+Reno, 35 Auto Center Drive
+Reno, NV 89511 
+
+Manchester, 300 Keller Street
+Manchester, NH 03103 
+
+Maple Shade, 531 Route 38 West
+Maple Shade, NJ 08052 
+
+Turnersville, 620 Cross Keys Rd
+Sicklerville, NJ 08081 
+
+Albuquerque, 5500 Alameda Blvd.
+Albuquerque, NM 87113 
+
+Santa Fe, 6800 Cerrillos Rd
+Santa Fe, NM 87507 
+
+Albany, 1860 Central Ave
+Albany, NY 12205 
+
+Buffalo, 1881 Niagara Falls Boulevard
+Amherst, NY 14228 
+
+Rochester, 3600 West Henrietta Rd
+Rochester, NY 14623 
+
+Independence Boulevard, 7700 Krefeld Drive
+Charlotte, NC 28227 
+
+South Boulevard, 10510 Cadillac Street
+Pineville, NC 28134 
+
+Fayetteville, 521 North McPherson Church Road
+Fayetteville, NC 28303 
+
+Gastonia, 1600 Remount Road
+Gastonia, NC 28054 
+
+Greensboro, 3412 West Wendover Avenue
+Greensboro, NC 27407 
+
+Greenville NC, 601 Whitley Drive
+Winterville, NC 28590 
+
+Hickory, 1935 15th Avenue Place SE
+Hickory, NC 28602 
+
+Capital Boulevard, 8007 Wild Wood Forest Dr.
+Raleigh, NC 27616 
+
+Raleigh, 8520 Glenwood Avenue
+Raleigh, NC 27612 
+
+Wilmington, 6030 Market St
+Wilmington, NC 28405 
+
+Winston-Salem, 1580 Hanes Mall Boulevard
+Winston-Salem, NC 27103 
+
+Cincinnati, 12105 Omniplex Court
+Cincinnati, OH 45240 
+
+Cleveland East, 4900 Pointe Parkway
+Warrensville Hts, OH 44128 
+
+Columbus Easton, 3800 Morse Road
+Columbus, OH 43219 
+
+Columbus Sawmill, 2700 Farmers Drive
+Columbus, OH 43235 
+
+Dayton, 3555 Miamisburg-Centerville Road
+West Carrollton, OH 45449 
