@@ -4,13 +4,36 @@ let cent = { lat: 37.5483, lng: -77.4527};
 let zip;
 let radii = [];
 let markers = [];
+let scatterChart;
+let stats = [];
 
-function build_request(){
+function send_request(){
   var geocoder = new google.maps.Geocoder;
   geocoder.geocode({'location': cent}, function(results, status) {
     console.log({"center": cent, "zip": zip, "radii": radii})
     var zip = results[0]["address_components"].filter(function(c){ return c["types"] == "postal_code"})[0].short_name
-    return {"center": cent, "zip": zip, "radii": radii};
+    var req = {"center": cent, "zip": zip, "radii": radii};
+	$.get({
+        url: 'http://ffed58d2a0e4.ngrok.io',
+        data: req,
+        headers: {'Access-Control-Allow-Origin': '*'},
+        success: function(data){
+          stats = data["stats"]
+          for(i=0; i < circles.length; i++) {
+       			 m = addMarker(
+       			    new google.maps.LatLng(circles[i].getCenter().lat(), circles[i].getBounds().getNorthEast().lng()),
+       			    data["stats"][i]["med"]);
+       			 markers.push(m);
+       			 m = addMarker(
+       			    new google.maps.LatLng(circles[i].getCenter().lat(), circles[i].getBounds().getSouthWest().lng()),
+       			    data["stats"][i]["med"]);
+       			 markers.push(m);
+		  }          
+	    },
+        error: function(data){
+       		console.log(data) 
+        }
+    }); 
   });
 }
 
@@ -29,8 +52,13 @@ function setRings(center, zoom, rings, miles) {
           });
         google.maps.event.addListener(cityCircle,"mouseover",function(){
            this.setOptions({strokeColor: "#00FF00"});
+           j = parseInt(this.radius/(1609.34*miles));
            document.getElementById("ring").innerHTML = this.radius/(1609.34*miles);
            document.getElementById("mile").innerHTML = this.radius/1609.34; 
+           document.getElementById("min").innerHTML = stats[j]["min"]
+           document.getElementById("max").innerHTML = stats[j]["max"]
+           document.getElementById("med").innerHTML = stats[j]["med"]
+           document.getElementById("avg").innerHTML = stats[j]["avg"]
         }); 
 
         google.maps.event.addListener(cityCircle,"mouseout",function(){
@@ -80,8 +108,11 @@ function addMarker(location, label) {
 
 
 function addData() {
-	for (i=0; i < circles.length; i++) {
-        
+	send_request();
+	/*$.get({
+      url: 'http://ffed58d2a0e4.ngrok.io',
+      data: build_request()   
+	for (i=0; i < circles.length; i++) {        
         m = addMarker(
            new google.maps.LatLng(circles[i].getCenter().lat(), circles[i].getBounds().getNorthEast().lng()),
            "0");
@@ -90,7 +121,7 @@ function addData() {
            new google.maps.LatLng(circles[i].getCenter().lat(), circles[i].getBounds().getSouthWest().lng()),
            "0");
         markers.push(m);
-    }
+    }*/
 }
 
 function initMap() {
@@ -98,7 +129,7 @@ function initMap() {
 		center: cent,
 		zoom: 5,
 	});
-	setRings(cent, 5, 30, 100)
+	setRings(cent, 5, 5, 100)
 
     const input = document.getElementById("search");
 	const autocomplete = new google.maps.places.Autocomplete(input);
@@ -132,11 +163,48 @@ function initMap() {
 	  setRings(cent, 5, rings.value, miles.value);
     });
 }
+function clean_chart() {
+	scatterChart.destroy();
+}
+function create_chart(data) {
+    var ctx = document.getElementById('myChart');
+    scatterChart = new Chart(ctx, {
+    type: 'scatter',
+    data: {
+        datasets: [{
+            label: '',
+            data: data,
+            pointBackgroundColor: 'FFC107'
+        }]
+    },
+    options: {
+        title: {
+            display: true,
+            text: "Transfer Fee Versus Distance",
+			fontColor: '#FFC107'
+		},
+        scales: {
+            xAxes: [{
+                type: 'linear',
+                position: 'bottom',
+                gridLines:{color: '#FFC107', display:false},
+                ticks: {fontColor: '#FFC107'}
+            }],
+            yAxes: [{
+                type: 'linear',
+                gridLines:{color: '#FFC107', display:false},
+                ticks: {fontColor: '#FFC107'}
+            }],
+        }
+    }
+    });
+}
 
 function init() {
 	$(document).ready(function(){
     	$('.sidenav').sidenav();
 	});
+    create_chart(temp_data);
 }
 
 init()
