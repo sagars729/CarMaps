@@ -12,11 +12,11 @@ function send_request(){
   geocoder.geocode({'location': cent}, function(results, status) {
     console.log({"center": cent, "zip": zip, "radii": radii})
     var zip = results[0]["address_components"].filter(function(c){ return c["types"] == "postal_code"})[0].short_name
-    var req = {"center": cent, "zip": zip, "radii": radii};
-	$.get({
+    console.log({"center": cent, "zip": zip, "radii": radii})
+	$.post({
         url: 'http://ffed58d2a0e4.ngrok.io',
-        data: req,
-        headers: {'Access-Control-Allow-Origin': '*'},
+        data: {"center": cent, "zip": zip, "radii": radii},
+        headers: {'content-type': 'application/json'},
         success: function(data){
           stats = data["stats"]
           for(i=0; i < circles.length; i++) {
@@ -204,7 +204,7 @@ function init() {
 	$(document).ready(function(){
     	$('.sidenav').sidenav();
 	});
-    create_chart(temp_data);
+    create_chart();//temp_data);
 }
 
 init()
