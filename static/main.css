@@ -15,3 +15,42 @@ html, body {
   margin-left: 2%;
   padding: 0;
 }
+
+::placeholder { 
+  color: black;
+  opacity: 1; 
+}
+
+:-ms-input-placeholder { 
+  color: black;
+}
+
+::-ms-input-placeholder { 
+  color: black;
+}
+
+::-webkit-slider-thumb {
+    background-color: red;
+}
+::-moz-range-thumb {
+  background-color: red;
+}
+::-ms-thumb {
+  background-color: red;
+}
+
+/***** These are to edit the thumb and the text inside the thumb *****/
+.thumb {
+  background-color: #dedede;
+}
+.thumb.active .value {
+  color: red;
+}
+
+.centerel{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
