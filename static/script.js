@@ -30,7 +30,23 @@ function send_request(){
        			    new google.maps.LatLng(circles[i].getCenter().lat(), circles[i].getBounds().getSouthWest().lng()),
        			    data["stats"][i]["median"].toString());
        			 markers.push(m);
-		  }          
+		  }  
+		  samples = 0;
+	 	  var l = data["carsInRadii"].length;
+          points = []
+          for(i=0; i < l; i++) {
+		    samples += data["carsInRadii"][i].length;
+		    for(j=0; j < data["carsInRadii"][i].length; j++) {
+			  points.push({x: data["carsInRadii"][i][j]["distance"], y: data["carsInRadii"][i][j]["fee"]})
+            }
+          } 
+          console.log(points);
+          create_chart(points);
+          document.getElementById("samples").innerHTML = samples;
+		  document.getElementById("error").innerHTML = data["bestFit"]["stdErr"];
+		  document.getElementById("slope").innerHTML = data["bestFit"]["slope"];
+		  document.getElementById("inter").innerHTML = data["bestFit"]["intercept"];
+                
 	    },
         error: function(data){
        		console.log(data) 
