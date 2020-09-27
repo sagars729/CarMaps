@@ -3,6 +3,7 @@ let circles = [];
 let cent = { lat: 37.5483, lng: -77.4527};
 let zip;
 let radii = [];
+let markers = [];
 
 function build_request(){
   var geocoder = new google.maps.Geocoder;
@@ -15,7 +16,7 @@ function build_request(){
 
 function setRings(center, zoom, rings, miles) {
 	map.setZoom(zoom)
-	for (i=0; i < rings; i++) {
+	for (i=rings-1; i >= 0; i--) {
 		var cityCircle = new google.maps.Circle({
             strokeColor: "#FF0000",
             strokeOpacity: 0.8,
@@ -26,9 +27,21 @@ function setRings(center, zoom, rings, miles) {
             center: center,
             radius: 1609.34*miles*i,
           });
-		circles.push(cityCircle)
-        radii.push(1609.34*miles*i)
+        google.maps.event.addListener(cityCircle,"mouseover",function(){
+           this.setOptions({strokeColor: "#00FF00"});
+           document.getElementById("ring").innerHTML = this.radius/(1609.34*miles);
+           document.getElementById("mile").innerHTML = this.radius/1609.34; 
+        }); 
+
+        google.maps.event.addListener(cityCircle,"mouseout",function(){
+          this.setOptions({strokeColor: "#FF0000"});
+        });
+        circles.unshift(cityCircle);
+        radii.unshift(miles*i);
+		//circles.push(cityCircle)
+        //radii.push(miles*i)
 	}
+    addData();
 	return map;
 }
 
@@ -48,9 +61,38 @@ function clearRings() {
 	var l = circles.length
 	for (i=0; i < l; i++) { 
 		remove_circle(circles.pop())
+        markers.pop().setMap(null);
+        markers.pop().setMap(null);
         radii.pop();
 	}
 }
+
+function addMarker(location, label) {
+  // Add the marker at the clicked location, and add the next-available label
+  // from the array of alphabetical characters.
+  m = new google.maps.Marker({
+    position: location,
+    label: label,
+    map: map,
+  });
+  return m;
+}
+
+
+function addData() {
+	for (i=0; i < circles.length; i++) {
+        
+        m = addMarker(
+           new google.maps.LatLng(circles[i].getCenter().lat(), circles[i].getBounds().getNorthEast().lng()),
+           "0");
+        markers.push(m);
+        m = addMarker(
+           new google.maps.LatLng(circles[i].getCenter().lat(), circles[i].getBounds().getSouthWest().lng()),
+           "0");
+        markers.push(m);
+    }
+}
+
 function initMap() {
 	map = new google.maps.Map(document.getElementById("map"), {
 		center: cent,
