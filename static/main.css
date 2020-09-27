@@ -1,0 +1,56 @@
+#search {
+  margin: 1%;
+}
+
+#map {
+  height: 75%;
+  margin: 1%;
+}
+
+html, body {
+  height: 100%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 0;
+}
+
+::placeholder { 
+  color: black;
+  opacity: 1; 
+}
+
+:-ms-input-placeholder { 
+  color: black;
+}
+
+::-ms-input-placeholder { 
+  color: black;
+}
+
+::-webkit-slider-thumb {
+    background-color: red;
+}
+::-moz-range-thumb {
+  background-color: red;
+}
+::-ms-thumb {
+  background-color: red;
+}
+
+/***** These are to edit the thumb and the text inside the thumb *****/
+.thumb {
+  background-color: #dedede;
+}
+.thumb.active .value {
+  color: red;
+}
+
+.centerel{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>CarMaps</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/static/main.css"/>
+	</head>
+
+	<body class="black">
+		<nav>
+		  <div class="nav-wrapper">
+            <form action="#">
+		      <div class="input-field amber black-text">
+		        <input id="search" class="amber black-text" type="search" required>
+		        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+		        <i class="material-icons">close</i>
+		      </div>
+            </form> 
+		  </div>
+		</nav>
+
+        <form action="#">
+		  <div class="row">
+		    <div class="col s2">
+				<p class="amber-text centerel flow-text">Rings</p>
+			</div>
+			<div class="col s10">
+              <p class="range-field">
+                <input class="amber centervert" type="range" id="rings" min="5" max="30" value="5"/>
+              </p>
+		    </div>
+          </div>
+		  <div class="row">
+		    <div class="col s2">
+				<p class="amber-text centerel flow-text">Miles</p>
+			</div>
+			<div class="col s10">
+              <p class="range-field">
+                <input class="amber" type="range" id="miles" min="25" max="500" value="100"/>
+              </p>
+		    </div>
+          </div>
+        </form>
+
+		<div id="map"></div>
+
+        <div class="row">
+			<div class="col s1">
+				<p class="amber-text centerel flow-text">Ring</p>
+			</div>		
+			<div class="col s1">
+				<p id="ring" class="amber-text centerel flow-text">0</p>
+			</div>		
+			<div class="col s1">
+				<p class="amber-text centerel flow-text">Mile</p>
+			</div>		
+			<div class="col s1">
+				<p id="mile" class="amber-text centerel flow-text">0</p>
+			</div>		
+			<div class="col s1">
+				<p class="amber-text centerel flow-text">Min</p>
+			</div>		
+			<div class="col s1">
+				<p id="min" class="amber-text centerel flow-text">0</p>
+			</div>		
+			<div class="col s1">
+				<p class="amber-text centerel flow-text">Median</p>
+			</div>		
+			<div class="col s1">
+				<p id="med" class="amber-text centerel flow-text">0</p>
+			</div>		
+			<div class="col s1">
+				<p class="amber-text centerel flow-text">Max</p>
+			</div>		
+			<div class="col s1">
+				<p id="max" class="amber-text centerel flow-text">0</p>
+			</div>		
+			<div class="col s1">
+				<p class="amber-text centerel flow-text">Average</p>
+			</div>		
+			<div class="col s1">
+				<p id="avg" class="amber-text centerel flow-text">0</p>
+			</div>		
+        </div>
+
+		<div class="row">
+			<div class="col s6">
+				<canvas id="myChart" width="400" height="400"></canvas>
+ 			</div>
+			<div class="col s6">
+				<div class="row">
+					<div class="col s6">
+						<p class="amber-text centerel flow-text">Samples</p>
+					</div>
+					<div class="col s6">
+						<p class="amber-text centerel flow-text">0</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s6">
+						<p class="amber-text centerel flow-text">Slope</p>
+					</div>
+					<div class="col s6">
+						<p class="amber-text centerel flow-text">0</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s6">
+						<p class="amber-text centerel flow-text">Intercept</p>
+					</div>
+					<div class="col s6">
+						<p class="amber-text centerel flow-text">0</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s6">
+						<p class="amber-text centerel flow-text">Error</p>
+					</div>
+					<div class="col s6">
+						<p class="amber-text centerel flow-text">0</p>
+					</div>
+				</div>
+             </div>
+        </div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCESuC6JVJ7gGkXdY1XR9xwu9X0avsiXgA&callback=initMap&libraries=places&v=weekly" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg==" crossorigin="anonymous"></script>
+		<script src="/static/script.js"></script>
+	</body>
+</html>
