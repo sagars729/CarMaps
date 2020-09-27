@@ -108,20 +108,17 @@ function addMarker(location, label) {
 
 
 function addData() {
-	send_request();
-	/*$.get({
-      url: 'http://ffed58d2a0e4.ngrok.io',
-      data: build_request()   
+	//send_request();
 	for (i=0; i < circles.length; i++) {        
         m = addMarker(
            new google.maps.LatLng(circles[i].getCenter().lat(), circles[i].getBounds().getNorthEast().lng()),
-           "0");
+           "");
         markers.push(m);
         m = addMarker(
            new google.maps.LatLng(circles[i].getCenter().lat(), circles[i].getBounds().getSouthWest().lng()),
-           "0");
+           "");
         markers.push(m);
-    }*/
+    }
 }
 
 function initMap() {
