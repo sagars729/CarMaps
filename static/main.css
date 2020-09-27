@@ -1,0 +1,17 @@
+#search {
+  margin: 1%;
+}
+
+#map {
+  height: 75%;
+  margin: 1%;
+}
+
+html, body {
+  height: 100%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 0;
+}
